@@ -10,7 +10,7 @@ let form = document.querySelector('.testForm');
 
 let inputPassword = document.querySelector('.inputPass');
 
-let requiredPasswordPattern = /^(?=.*[a-zA-Z])(?=.*^[a-zA-Z0-9]).{8}$/;
+let requiredPasswordPattern = /^(?=.*[a-zA-Z])(?=.*^[a-zA-Z0-9]).{8,}$/;
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
